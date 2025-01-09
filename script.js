@@ -18,7 +18,7 @@ function botaoClicado (){
  
  setTimeout(() => {
      resultadoAnimado.classList.remove("mostrar");
-   }, 90000);
+   }, 60000);
  
 }
 
