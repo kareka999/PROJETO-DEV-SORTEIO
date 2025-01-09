@@ -1,4 +1,5 @@
 const botao = document.querySelector(".button")
+const resultadoAnimado = document.getElementById("resultadoAnimado");
 
 function botaoClicado (){
   const inputEntre = Math.ceil (document.querySelector(".input-min").value  )
@@ -9,9 +10,18 @@ function botaoClicado (){
     return
  }
 
- const numeroSorteado = Math.floor(Math.random() * (inputEntre - inputE + 1)) + inputE;
- alert (numeroSorteado)
+ const numeroSorteado = Math.floor(Math.random() * (inputE - inputEntre + 1)) + inputEntre;
+
+ resultadoAnimado.textContent = numeroSorteado;
+ resultadoAnimado.classList.add("mostrar");
+ 
+ 
+ setTimeout(() => {
+     resultadoAnimado.classList.remove("mostrar");
+   }, 90000);
+ 
 }
+
 
 
 
