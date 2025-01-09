@@ -83,6 +83,8 @@ opacity: 0.7;
         padding: 10px; /* Adiciona um padding para evitar que os elementos encostem nas bordas */
     }
 
+    
+
     .imagem {
         display: block;
         margin: 0 auto; /* Centraliza a imagem */
