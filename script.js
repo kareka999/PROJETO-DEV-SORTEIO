@@ -5,8 +5,8 @@ function botaoClicado (){
   const inputEntre = Math.ceil (document.querySelector(".input-min").value  )
   const inputE = Math.floor (document.querySelector(".input-max").value)
   
- if(inputEntre>inputE){
-    alert ("O valor inicial deve ser menor que o valor final")
+ if(inputEntre>=inputE){
+    alert ("O valor inicial deve ser Menor que o valor maximo")
     return
  }
 
